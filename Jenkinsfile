@@ -11,14 +11,14 @@ pipeline {
         }
         stage('Build') {
             steps {
-               sh 'mvn clean package'
+               bat 'mvn clean package'
             }
         }        
         stage('Create Image'){
             steps{
                steps {
                 	script {
-                		sh 'ansible-playbook task.yml'
+                		bat 'ansible-playbook task.yml'
                 	}
                 }
             }
