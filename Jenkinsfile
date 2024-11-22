@@ -11,7 +11,8 @@ pipeline {
         }
         stage('Build') {
             steps {
-               sh 'mvn clean package'
+               def output = sh 'mvn clean package'
+               echo output
             }
         }        
         stage('Create Image'){
