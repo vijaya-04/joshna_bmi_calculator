@@ -16,9 +16,7 @@ pipeline {
         }        
         stage('Create Image'){
             steps{
-               steps {
-                		bat 'ansible-playbook task.yml'
-                }
+                	bat 'ansible-playbook task.yml'
             }
         }
     }
