@@ -1,7 +1,7 @@
 pipeline {  
     agent any
     tools{
-        Maven "Maven_Home"
+        Maven 'Maven_Home'
     }
     stages {
         stage('Clone') {
