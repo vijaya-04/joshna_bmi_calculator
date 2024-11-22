@@ -1,5 +1,7 @@
 pipeline {  
-    agent any
+    agent {
+        label 'Ansible-Node'
+    }
     tools{
         maven "Maven_Home"
     }
