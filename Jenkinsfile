@@ -3,7 +3,7 @@ pipeline {
         label 'Ansible-Node'
     }    
     tools{
-        maven "Maven-3.9.9"
+        Maven "apache-maven-3.9.9"
     }
     stages {
         stage('Clone') {
